@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main id="container">
+
+        <div id="result-space">
+            <p class="result"></p>
+        </div>
+
+        <ul class="ul-container">
+            <li><button id="ac" class="other-button" onclick="clean()">AC</button></li>
+            <li><button id="plus-minus" class="other-button" onclick="plusMinus()">+/-</button></li>
+            <li><button id="percentage" class="other-button" onclick="percentage()">%</button></li>
+            <li><button id="division" class="last-button" onclick="insert('/')">÷</button></li>
+        </ul>
+
+        <ul class="ul-container">
+            <li><button id="seven" class="button" onclick="insert('7')">7</button></li>
+            <li><button id="eight" class="button" onclick="insert('8')">8</button></li>
+            <li><button id="nine" class="button" onclick="insert('9')">9</button></li>
+            <li><button id="multiplication" class="last-button" onclick="insert('*')">×</button></li>
+        </ul>
+
+        <ul class="ul-container">
+            <li><button id="four" class="button" onclick="insert('4')">4</button></li>
+            <li><button id="five" class="button" onclick="insert('5')">5</button></li>
+            <li><button id="six" class="button" onclick="insert('6')">6</button></li>
+            <li><button id="subtraction" class="last-button" onclick="insert('-')">−</button></li>
+        </ul>
+
+        <ul class="ul-container">
+            <li><button id="one" class="button" onclick="insert('1')">1</button></li>
+            <li><button id="two" class="button" onclick="insert('2')">2</button></li>
+            <li><button id="three" class="button" onclick="insert('3')">3</button></li>
+            <li><button id="sum" class="last-button" onclick="insert('+')">+</button></li>
+        </ul>
+
+        <ul class="ul-container">
+            <li><button id="zero" class="button" onclick="insert('0')">0</button></li>
+            <li><button id="point" class="button" onclick="insert('.')">.</button></li>
+            <li><button id="equals" class="last-button" onclick="calculate()">=</button></li>
+        </ul>
+    </main>
+
+    <script src="scripts/main.js
+    "></script>
+</body>
+</html>
