@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,20 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    <main id="container">
+
+    <form action="" name="Calculator" id="container">
 
         <div id="result-space">
-            <p class="result"></p>
+            <!--<p class="result"></p>-->
+            <input type="number" class="result" disabled>
         </div>
 
         <ul class="ul-container">
             <li><button id="ac" class="other-button" onclick="clean()">AC</button></li>
-            <li><button id="plus-minus" class="other-button" onclick="plusMinus()">+/-</button></li>
-            <li><button id="percentage" class="other-button" onclick="percentage()">%</button></li>
+            <li><button id="plus-minus" class="other-button" onclick="insert('+/-')">+/-</button></li>
+            <li><button id="percentage" class="other-button" onclick="insert('%')">%</button></li>
             <li><button id="division" class="last-button" onclick="insert('/')">÷</button></li>
         </ul>
 
@@ -47,9 +51,10 @@
             <li><button id="point" class="button" onclick="insert('.')">.</button></li>
             <li><button id="equals" class="last-button" onclick="calculate()">=</button></li>
         </ul>
-    </main>
 
-    <script src="scripts/main.js
-    "></script>
+    </form>
+
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

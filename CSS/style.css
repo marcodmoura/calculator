@@ -19,15 +19,18 @@ body {
 }
 
 #result-space {
-    max-width: 280px;
-    
+    max-width: 280px;  
 }
 
 .result {
     color: #FFF;
-    font-size: 50px;
+    font-size: 40px;
     text-align: right;
     float: right;
+    background-color: #000;
+    border: none;
+    height: 70px;
+    width: 280px;
 }
 
 .ul-container {
